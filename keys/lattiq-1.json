@@ -1,0 +1,9 @@
+{
+  "key_id": "lattiq-1",
+  "algorithm": "ed25519",
+  "public_key": "s1LFT4sREWiZU6X10o9JAj8FHZwdPJaXZHrpu6Lr/co=",
+  "valid_from": "2026-04-26T00:00:00Z",
+  "valid_until": null,
+  "issuer": "lattiq",
+  "purpose": "observe-receipt-signing"
+}
