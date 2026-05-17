@@ -1,9 +1,0 @@
-{
-  "key_id": "lattiq-merkle-1",
-  "algorithm": "ed25519",
-  "public_key": "sRwV8e8pURAq3FeDvrpXUFwslMkwYvLti9u+5Qm+HuU=",
-  "valid_from": "2026-04-30T02:28:27Z",
-  "valid_until": null,
-  "issuer": "lattiq",
-  "purpose": "observe-merkle-log-signing"
-}

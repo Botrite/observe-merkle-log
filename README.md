@@ -8,8 +8,11 @@ It is the **public, customer-verifiable record** of what we observed and when.
 ## What's here
 
 - `YYYY/MM/DD/root.txt` — the day's Merkle root (64 hex chars)
-- `YYYY/MM/DD/leaves.jsonl` — every receipt issued that day (one canonical JSON per line)
-- `YYYY/MM/DD/meta.json` — signed metadata: date, leaf count, tree root, prev day's root
+- `YYYY/MM/DD/leaf_hashes.txt` — one RFC 6962 leaf hash per line, sorted; each line
+  is `sha256(0x00 || canonical_bytes)` for one receipt. Per-receipt content is NOT
+  published; customers hold their own canonical receipts and look up their leaf hash here.
+- `YYYY/MM/DD/meta.json` — signed metadata: date, leaf count, tree root, prev day's root,
+  source format, dogfood-catalog snapshot SHA256, and per-reason exclusion counts.
 - `YYYY/MM/DD/meta.json.sig` — base64 ed25519 signature over canonical-JSON `meta.json`
 - `YYYY/MM/DD/ots/root.txt.ots` — OpenTimestamps proof anchoring the root in Bitcoin
 - `keys/` — the ed25519 public keys used to verify receipts and merkle metadata
